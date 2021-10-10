@@ -1,0 +1,53 @@
+@font-face { font-family: "BogleWeb-Black";
+    src: url("BogleWeb-Black.eot");
+    src: url("BogleWeb-Black.eot?#iefix") format("embedded-opentype"),
+    url("BogleWeb-Black.woff2") format("woff2"),
+    url("BogleWeb-Black.woff") format("woff"),
+    url("BogleWeb-Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face { font-family: "BogleWeb-BlackItalic";
+    src: url("BogleWeb-BlackItalic.eot");
+    src: url("BogleWeb-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("BogleWeb-BlackItalic.woff2") format("woff2"),
+    url("BogleWeb-BlackItalic.woff") format("woff"),
+    url("BogleWeb-BlackItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face { font-family: "BogleWeb-Bold";
+    src: url("BogleWeb-Bold.eot");
+    src: url("BogleWeb-Bold.eot?#iefix") format("embedded-opentype"),
+    url("BogleWeb-Bold.woff2") format("woff2"),
+    url("BogleWeb-Bold.woff") format("woff"),
+    url("BogleWeb-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face { font-family: "BogleWeb-BoldItalic";
+    src: url("BogleWeb-BoldItalic.eot");
+    src: url("BogleWeb-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("BogleWeb-BoldItalic.woff2") format("woff2"),
+    url("BogleWeb-BoldItalic.woff") format("woff"),
+    url("BogleWeb-BoldItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face { font-family: "BogleWeb-Regular";
+    src: url("BogleWeb-Regular.eot");
+    src: url("BogleWeb-Regular.eot?#iefix") format("embedded-opentype"),
+    url("BogleWeb-Regular.woff2") format("woff2"),
+    url("BogleWeb-Regular.woff") format("woff"),
+    url("BogleWeb-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face { font-family: "BogleWeb-RegularItalic";
+    src: url("BogleWeb-RegularItalic.eot");
+    src: url("BogleWeb-RegularItalic.eot?#iefix") format("embedded-opentype"),
+    url("BogleWeb-RegularItalic.woff2") format("woff2"),
+    url("BogleWeb-RegularItalic.woff") format("woff"),
+    url("BogleWeb-RegularItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; }

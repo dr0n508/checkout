@@ -1,0 +1,85 @@
+.gray {
+  color: $gray;
+}
+
+.mid-gray {
+  color: $mid-gray;
+}
+
+.red {
+  color: $red;
+}
+
+.f2 {
+  font-size: 24px;
+}
+.f3 {
+  font-size: 20px;
+}
+
+.f4 {
+  font-size: 18px;
+}
+
+.f5 {
+  font-size: 16px;
+}
+
+.f6 {
+  font-size: 14px;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.pr-1 {
+  padding-right: 10px;
+}
+
+.pl-1 {
+  padding-left: 10px;
+}
+
+.pr4 {
+  padding-right: 24px;
+}
+
+.pb3 {
+  padding-bottom: 16px;
+}
+
+.mb3 {
+  margin-bottom: 16px;
+}
+
+.mb4 {
+  margin-bottom: 32px;
+}
+
+.pt3 {
+  padding-top: 16px;
+}
+
+.mh3 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.bt {
+  border-top: solid 1px $light-gray;
+}
+
+
+.m-minus {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.bold {
+  font-family: $bold;
+}
+
+.h2 {
+  font-size: 24px;
+}

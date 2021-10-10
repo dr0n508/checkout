@@ -1,0 +1,19 @@
+.main-header {
+  position: relative;
+  background-color: $accent;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  color: white;
+  .back-btn {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+
+  }
+}
