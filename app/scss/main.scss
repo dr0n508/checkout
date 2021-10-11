@@ -163,6 +163,11 @@ h1, h2, h3, h4 {
   margin-right: 24px;
 }
 
+.row-form {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
 .aside {
   width: 30%;
   flex-shrink: 0;
@@ -237,6 +242,29 @@ h1, h2, h3, h4 {
         height: auto;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main-content {
+    flex-wrap: wrap;
+    width: 600px;
+    max-width: 100%;
+    .main-section {
+      //width: 600px;
+      //max-width: 100%;
+    }
+    .aside {
+      width: 600px;
+      max-width: 100%;
+    }
+  }
+  .row-form {
+    flex-wrap: wrap;
+    .w-50 {
+      width: 100%;
+    }
+
   }
 }
 
