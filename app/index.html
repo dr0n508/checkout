@@ -33,65 +33,49 @@
   <h2 class="f4 bold">Checkout</h2>
 </header>
 	<main class="main">
+  <form action="" id="form_checkout">
+    <div class="main-content container flex">
+      <section class="main-section flex-auto">
 
-  <div class="main-content container flex">
-    <section class="main-section flex-auto">
+        <div class="checkout-block shadow">
 
-      <div class="checkout-block shadow">
+          <div class="card-header">
+            <h2 class="f2 bold">Shipping Information</h2>
+          </div>
 
-        <div class="card-header">
-          <h2 class="f2 bold">Shipping Information</h2>
-        </div>
+          <div class="inner-wrapper">
 
-        <div class="inner-wrapper">
-          
-          <p class="gray f6 pb3">* Required fields</p>
-
-          <form id="form" class="wrapper-shipping-form mb3">
-
-            <button>adasd</button>
+            <p class="gray f6 pb3">* Required fields</p>
 
             <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <input type="text" name="ship_first_name" id="ship_first_name" value="" placeholder="First Name*" class="required_field">
                 </div>
-                <!--<div class="error red small">-->
-                  <!--<span>Please enter a valid name <i class="fas fa-exclamation-circle"></i></span>-->
-                <!--</div>-->
               </div>
 
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <input type="text" name="ship_last_name" id="ship_last_name" value="" placeholder="Last Name*" class="required_field">
                 </div>
-                <!--<div class="error red small">-->
-                  <!--<span>Please enter a valid name <i class="fas fa-exclamation-circle"></i></span>-->
-                <!--</div>-->
               </div>
             </div>
 
-            <div class="flex row-form">
+            <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <input type="text" name="ship_address" id="ship_address" value="" placeholder="Address*" class="required_field">
                 </div>
-                <!--<div class="error red small">-->
-                  <!--<span>Please enter a valid name <i class="fas fa-exclamation-circle"></i></span>-->
-                <!--</div>-->
               </div>
 
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <input type="text" name="ship_city" id="ship_city" value="" placeholder="City*" class="required_field">
                 </div>
-                <!--<div class="error red small">-->
-                  <!--<span>Please enter a valid name <i class="fas fa-exclamation-circle"></i></span>-->
-                <!--</div>-->
               </div>
             </div>
 
-            <div class="flex row-form">
+            <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <select id="ship_state" name="ship_state" class="required_field">
@@ -160,22 +144,16 @@
                     <path d="M8 10l3.5-4h-7z" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <!--<div class="error red small">-->
-                  <!--<span>Please select State <i class="fas fa-exclamation-circle"></i></span>-->
-                <!--</div>-->
               </div>
 
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <input type="text" name="ship_zip" id="ship_zip" value="" placeholder="Zip*" class="required_field">
                 </div>
-                <!--<div class="error red small">-->
-                  <!--<span>Please enter a valid zip <i class="fas fa-exclamation-circle"></i></span>-->
-                <!--</div>-->
               </div>
             </div>
 
-            <div class="flex row-form">
+            <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <select id="ship_country" name="ship_country" class="required_field">
@@ -415,18 +393,12 @@
                     <path d="M8 10l3.5-4h-7z" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <!--<div class="error red small">-->
-                  <!--<span>Please select Country <i class="fas fa-exclamation-circle"></i></span>-->
-                <!--</div>-->
               </div>
 
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <input type="text" name="ship_phone" id="ship_phone" value="" placeholder="Phone*" class="required_field">
                 </div>
-                <!--<div class="error red small">-->
-                  <!--<span>Please enter a valid phone <i class="fas fa-exclamation-circle"></i></span>-->
-                <!--</div>-->
               </div>
             </div>
 
@@ -440,128 +412,122 @@
               <div class="input-wrapper">
                 <input type="text" name="bill_email" id="email-field" value="" placeholder="E-mail*" class="required_field email_field">
               </div>
-              <!--<div class="error red small">-->
-                <!--<span>Please enter a valid email <i class="fas fa-exclamation-circle"></i></span>-->
-              <!--</div>-->
             </div>
 
             <div class="form-input mb3 w-100">
               <input type="checkbox" id="is_gift" name="is_gift" value="1">
               <label for="is_gift" class="bold">Click here if your order is a gift</label>
             </div>
-          </form>
 
-          <p class="marked mb4 bold">Please fill in all the blanks in English.</p>
+            <p class="marked mb4 bold">Please fill in all the blanks in English.</p>
 
-          <div class="products-row">
-            
-            <ul class="product-list">
+            <div class="products-row">
 
-              <li class="flex flex-column justify-between flex-auto">
-                <div class="flex flex-row">
-                  <div class="checkbox-wrapper">
-                    <label for=""> <input type="checkbox" checked=""> </label>
-                  </div>
+              <ul class="product-list">
 
-                  <div class="product-image-wrapper">
-                    <img class="product-image" src="img/product.png" alt="">
-                  </div>
-
-                  <div class="flex flex-row w-100">
-                    <div class="f5 flex mh3 flex-column w-75">
-                      <div class="product-title mid-gray">
-                        <span class="w_BT">Rubies T-Rex Dinosaur Toddler Halloween Costume</span>
-                      </div>
-                      <div class="gray">
-                        <div>Clothing Size: 2T</div>
-                        <div>$19.97/ea</div>
-                      </div>
+                <li class="flex flex-column justify-between flex-auto">
+                  <div class="flex flex-row">
+                    <div class="checkbox-wrapper">
+                      <label for=""> <input type="checkbox" checked=""> </label>
                     </div>
 
-                    <div class="price-qty flex flex-row w-25">
-                      <div class="f5 mid-gray w-100 pr4"><span>Qty 1</span></div>
-                      <div class="f5 bold"><span>$19.97</span></div>
+                    <div class="product-image-wrapper">
+                      <img class="product-image" src="img/product.png" alt="">
                     </div>
-                  </div>
-                </div>
-              </li>
 
-              <li class="flex flex-column justify-between flex-auto">
-                <div class="flex flex-row">
-                  <div class="checkbox-wrapper">
-                    <label for=""> <input type="checkbox" checked=""> </label>
-                  </div>
-
-                  <div class="product-image-wrapper">
-                    <img class="product-image" src="img/product2.jpeg" alt="">
-                  </div>
-
-                  <div class="flex flex-row w-100">
-                    <div class="f5 flex mh3 flex-column w-75">
-                      <div class="product-title mid-gray">
-                        <span class="w_BT">Rubies T-Rex Dinosaur Toddler Halloween Costume</span>
+                    <div class="flex flex-row w-100">
+                      <div class="f5 flex mh3 flex-column w-75">
+                        <div class="product-title mid-gray">
+                          <span class="w_BT">Rubies T-Rex Dinosaur Toddler Halloween Costume</span>
+                        </div>
+                        <div class="gray">
+                          <div>Clothing Size: 2T</div>
+                          <div>$19.97/ea</div>
+                        </div>
                       </div>
-                      <div class="gray">
-                        <div>Clothing Size: 2T</div>
-                        <div>$19.97/ea</div>
+
+                      <div class="price-qty flex flex-row w-25">
+                        <div class="f5 mid-gray w-100 pr4"><span>Qty 1</span></div>
+                        <div class="f5 bold"><span>$19.97</span></div>
                       </div>
                     </div>
+                  </div>
+                </li>
 
-                    <div class="price-qty flex flex-row w-25">
-                      <div class="f5 mid-gray w-100 pr4"><span>Qty 1</span></div>
-                      <div class="f5 bold"><span>$19.97</span></div>
+                <li class="flex flex-column justify-between flex-auto">
+                  <div class="flex flex-row">
+                    <div class="checkbox-wrapper">
+                      <label for=""> <input type="checkbox" checked=""> </label>
                     </div>
-                  </div>
-                </div>
-              </li>
 
-              <li class="flex flex-column justify-between flex-auto">
-                <div class="flex flex-row">
-                  <div class="checkbox-wrapper">
-                    <label for=""><input class="" id="" type="checkbox" checked=""></label>
-                  </div>
+                    <div class="product-image-wrapper">
+                      <img class="product-image" src="img/product2.jpeg" alt="">
+                    </div>
 
-                  <div class="product-image-wrapper">
-                    <img class="product-image" src="img/product.png" alt="">
-                  </div>
-
-                  <div class="flex flex-row w-100">
-                    <div class="f5 flex mh3 flex-column w-75">
-                      <div class="product-title mid-gray">
-                        <span class="w_BT">Rubies T-Rex Dinosaur Toddler Halloween Costume</span>
+                    <div class="flex flex-row w-100">
+                      <div class="f5 flex mh3 flex-column w-75">
+                        <div class="product-title mid-gray">
+                          <span class="w_BT">Rubies T-Rex Dinosaur Toddler Halloween Costume</span>
+                        </div>
+                        <div class="gray">
+                          <div>Clothing Size: 2T</div>
+                          <div>$19.97/ea</div>
+                        </div>
                       </div>
-                      <div class="gray">
-                        <div>Clothing Size: 2T</div>
-                        <div>$19.97/ea</div>
+
+                      <div class="price-qty flex flex-row w-25">
+                        <div class="f5 mid-gray w-100 pr4"><span>Qty 1</span></div>
+                        <div class="f5 bold"><span>$19.97</span></div>
                       </div>
                     </div>
+                  </div>
+                </li>
 
-                    <div class="price-qty flex flex-row w-25">
-                      <div class="f5 mid-gray w-100 pr4"><span>Qty 1</span></div>
-                      <div class="f5 bold"><span>$19.97</span></div>
+                <li class="flex flex-column justify-between flex-auto">
+                  <div class="flex flex-row">
+                    <div class="checkbox-wrapper">
+                      <label for=""><input class="" id="" type="checkbox" checked=""></label>
+                    </div>
+
+                    <div class="product-image-wrapper">
+                      <img class="product-image" src="img/product.png" alt="">
+                    </div>
+
+                    <div class="flex flex-row w-100">
+                      <div class="f5 flex mh3 flex-column w-75">
+                        <div class="product-title mid-gray">
+                          <span class="w_BT">Rubies T-Rex Dinosaur Toddler Halloween Costume</span>
+                        </div>
+                        <div class="gray">
+                          <div>Clothing Size: 2T</div>
+                          <div>$19.97/ea</div>
+                        </div>
+                      </div>
+
+                      <div class="price-qty flex flex-row w-25">
+                        <div class="f5 mid-gray w-100 pr4"><span>Qty 1</span></div>
+                        <div class="f5 bold"><span>$19.97</span></div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="checkout-block shadow">
-        <div class="card-header">
-          <h2 class="f2 bold">Select Payment Method</h2>
-        </div>
+        <div class="checkout-block shadow">
+          <div class="card-header">
+            <h2 class="f2 bold">Select Payment Method</h2>
+          </div>
 
-        <div class="inner-wrapper">
-
-          <form id="add-creditcard-form">
+          <div class="inner-wrapper">
 
             <p class="gray f6 pb3">* Required field</p>
 
             <p class="f3 bold mb3">Card infornation</p>
 
-            <div class="flex row-form">
+            <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <input type="text" name="card_first_name" id="card_first_name" value="" placeholder="First Name*" class="required_field">
@@ -580,7 +546,7 @@
               </div>
             </div>
 
-            <div class="flex row-form">
+            <div class="row-form flex">
               <div class="form-input input-number mb3 w-100 pr-1 pl-1">
                 <div class="input-wrapper">
                   <i class="icon-card gray far fa-credit-card"></i>
@@ -592,7 +558,7 @@
               </div>
             </div>
 
-            <div class="flex row-form">
+            <div class="row-form flex">
               <div class="form-input mb3 w-50-fix pr-1 pl-1">
                 <div class="input-wrapper">
                   <select id="cc_exp_month" name="cc_exp_month">
@@ -654,7 +620,7 @@
               </div>
             </div>
 
-            <div class="flex row-form">
+            <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <input type="password" name="cvv_number" id="cvv_number" maxlength="3" value="" placeholder="CVV*" class="required_field">
@@ -665,7 +631,7 @@
               </div>
             </div>
 
-            <div class="flex row-form">
+            <div class="row-form flex">
               <div class="form-input mb3 w-100 pr-1 pl-1">
                 <div class="input-wrapper">
                   <input type="text" name="card_phone" id="card_phone" value="" placeholder="Phone*" class="required_field">
@@ -678,7 +644,7 @@
 
             <p class="f3 bold mb3">Billing address</p>
 
-            <div class="flex row-form">
+            <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <input type="text" name="billing_street" id="billing_street" value="" placeholder="Street address*" class="required_field">
@@ -695,7 +661,7 @@
               </div>
             </div>
 
-            <div class="flex row-form">
+            <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <input type="text" name="billing_city" id="billing_city" value="" placeholder="City">
@@ -779,7 +745,7 @@
               </div>
             </div>
 
-            <div class="flex row-form">
+            <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <input type="text" name="billing_zip" id="billing_zip" value="" placeholder="Zip*" class="required_field">
@@ -789,49 +755,47 @@
                 </div>
               </div>
             </div>
-
-          </form>
-        </div>
-      </div>
-
-      <div class="checkout-block shadow">
-        <div class="card-header">
-          <h2 class="f2 bold">Contact</h2>
+          </div>
         </div>
 
-        <div class="inner-wrapper">
+        <div class="checkout-block shadow">
+          <div class="card-header">
+            <h2 class="f2 bold">Contact</h2>
+          </div>
 
-          <p class="mb3">We'll contact you in case anything comes up with your order.</>
+          <div class="inner-wrapper">
 
-          <p class="gray f6 pb3">* Required fields</p>
+            <p class="mb3">We'll contact you in case anything comes up with your order.</p>
 
-          <div class="row-form">
-            <div class="form-input mb3 w-50 pr-1 pl-1">
-              <div class="input-wrapper">
-                <input type="text" name="email_contact" id="email_contact" value="" placeholder="E-mail*" class="required_field email_field">
-              </div>
-              <div class="error red small">
-                <span>Please enter a valid email <i class="fas fa-exclamation-circle"></i></span>
+            <p class="gray f6 pb3">* Required fields</p>
+
+            <div class="row-form">
+              <div class="form-input mb3 w-50 pr-1 pl-1">
+                <div class="input-wrapper">
+                  <input type="text" name="email_contact" id="email_contact" value="" placeholder="E-mail*" class="required_field email_field">
+                </div>
+                <div class="error red small">
+                  <span>Please enter a valid email <i class="fas fa-exclamation-circle"></i></span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div>
-            <label class="flex align-center" for="ld_checkbox_5">
-            <input id="ld_checkbox_5" name="emailOptInAccepted" type="checkbox" checked="">
-            <span class="f5 pl-1">Get emails about hot items, great savings, and more</span></label>
-          </div>
+            <div>
+              <label class="flex align-center" for="ld_checkbox_5">
+              <input id="ld_checkbox_5" name="emailOptInAccepted" type="checkbox" checked="">
+              <span class="f5 pl-1">Get emails about hot items, great savings, and more</span></label>
+            </div>
 
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <aside class="aside">
+      <aside class="aside">
 
       <div class="checkout-block shadow">
         <div class="inner-wrapper">
 
-          <button class="primary-btn w-100 bold mb3" type="button">Place order</button>
+          <button class="primary-btn w-100 bold mb3" type="submit">Place order</button>
 
           <div class="flex flex-column center">
 
@@ -859,9 +823,8 @@
         </div>
       </div>
     </aside>
-
-  </div>
-
+    </div>
+  </form>
 </main>
 	<footer>
   <div class="main-footer">

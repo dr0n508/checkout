@@ -1,5 +1,4 @@
 //show aside when bottom of page
-
 $(window).scroll(function() {
 
     if($(document).height() - ($(window).scrollTop() + $(window).height()) < 250 ) {
@@ -10,10 +9,8 @@ $(window).scroll(function() {
     }
 });
 
-
 $(function(){
-    console.log('Validation - Ready !');
-    $('#form').validate({
+    $('#form_checkout').validate({
         rules: {
             ship_first_name: 'required',
             ship_last_name: 'required',
