@@ -33,7 +33,7 @@
   <h2 class="f4 bold">Checkout</h2>
 </header>
 	<main class="main">
-  <form action="" id="form_checkout">
+  <form id="form_checkout">
     <div class="main-content container flex">
       <section class="main-section flex-auto">
 
@@ -50,27 +50,13 @@
             <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <input type="text" name="ship_first_name" id="ship_first_name" value="" placeholder="First Name*" class="required_field">
+                  <input type="text" name="ship_first_name" id="ship_first_name" value="" placeholder="First Name*">
                 </div>
               </div>
 
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <input type="text" name="ship_last_name" id="ship_last_name" value="" placeholder="Last Name*" class="required_field">
-                </div>
-              </div>
-            </div>
-
-            <div class="row-form flex">
-              <div class="form-input mb3 w-50 pr-1 pl-1">
-                <div class="input-wrapper">
-                  <input type="text" name="ship_address" id="ship_address" value="" placeholder="Address*" class="required_field">
-                </div>
-              </div>
-
-              <div class="form-input mb3 w-50 pr-1 pl-1">
-                <div class="input-wrapper">
-                  <input type="text" name="ship_city" id="ship_city" value="" placeholder="City*" class="required_field">
+                  <input type="text" name="ship_last_name" id="ship_last_name" value="" placeholder="Last Name*">
                 </div>
               </div>
             </div>
@@ -78,7 +64,21 @@
             <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <select id="ship_state" name="ship_state" class="required_field">
+                  <input type="text" name="ship_address" id="ship_address" value="" placeholder="Address*">
+                </div>
+              </div>
+
+              <div class="form-input mb3 w-50 pr-1 pl-1">
+                <div class="input-wrapper">
+                  <input type="text" name="ship_city" id="ship_city" value="" placeholder="City*">
+                </div>
+              </div>
+            </div>
+
+            <div class="row-form flex">
+              <div class="form-input mb3 w-50 pr-1 pl-1">
+                <div class="input-wrapper">
+                  <select id="ship_state" name="ship_state">
                     <option value="" selected disabled>State*</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -148,7 +148,7 @@
 
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <input type="text" name="ship_zip" id="ship_zip" value="" placeholder="Zip*" class="required_field">
+                  <input type="text" name="ship_zip" id="ship_zip" value="" placeholder="Zip*">
                 </div>
               </div>
             </div>
@@ -156,7 +156,7 @@
             <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <select id="ship_country" name="ship_country" class="required_field">
+                  <select id="ship_country" name="ship_country">
                     <option value="" selected disabled>Country*</option>
                     <option value="AX">Aland</option>
                     <option value="AL">Albania</option>
@@ -397,7 +397,7 @@
 
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <input type="text" name="ship_phone" id="ship_phone" value="" placeholder="Phone*" class="required_field">
+                  <input type="text" name="ship_phone" id="ship_phone" value="" placeholder="Phone*">
                 </div>
               </div>
             </div>
@@ -410,7 +410,7 @@
 
             <div class="form-input mb3 w-100">
               <div class="input-wrapper">
-                <input type="text" name="bill_email" id="email-field" value="" placeholder="E-mail*" class="required_field email_field">
+                <input type="text" name="ship_email" id="ship_email" value="" placeholder="E-mail*">
               </div>
             </div>
 
@@ -530,18 +530,12 @@
             <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <input type="text" name="card_first_name" id="card_first_name" value="" placeholder="First Name*" class="required_field">
-                </div>
-                <div class="error red small">
-                  <span>Please enter a valid name <i class="fas fa-exclamation-circle"></i></span>
+                  <input type="text" name="card_first_name" id="card_first_name" value="" placeholder="First Name*">
                 </div>
               </div>
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <input type="text" name="card_last_name" id="card_last_name" value="" placeholder="Last Name*" class="required_field">
-                </div>
-                <div class="error red small">
-                  <span>Please enter a valid name <i class="fas fa-exclamation-circle"></i></span>
+                  <input type="text" name="card_last_name" id="card_last_name" value="" placeholder="Last Name*">
                 </div>
               </div>
             </div>
@@ -550,10 +544,7 @@
               <div class="form-input input-number mb3 w-100 pr-1 pl-1">
                 <div class="input-wrapper">
                   <i class="icon-card gray far fa-credit-card"></i>
-                  <input type="text" name="card_number" id="card_number" value="" placeholder="Card number *" class="required_field">
-                </div>
-                <div class="error red small">
-                  <span>Please enter a valid card number <i class="fas fa-exclamation-circle"></i></span>
+                  <input type="text" name="card_number" id="card_number" value="" placeholder="Card number *">
                 </div>
               </div>
             </div>
@@ -579,9 +570,6 @@
                   <svg class="caret" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" role="presentation">
                     <path d="M8 10l3.5-4h-7z" fill-rule="evenodd"></path>
                   </svg>
-                </div>
-                <div class="error red small">
-                  <span>Please select MM <i class="fas fa-exclamation-circle"></i></span>
                 </div>
               </div>
 
@@ -614,19 +602,13 @@
                     <path d="M8 10l3.5-4h-7z" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <div class="error red small">
-                  <span>Please select YEAR <i class="fas fa-exclamation-circle"></i></span>
-                </div>
               </div>
             </div>
 
             <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <input type="password" name="cvv_number" id="cvv_number" maxlength="3" value="" placeholder="CVV*" class="required_field">
-                </div>
-                <div class="error red small">
-                  <span>Please enter a valid CVV <i class="fas fa-exclamation-circle"></i></span>
+                  <input type="password" name="cvv_number" id="cvv_number" maxlength="3" value="" placeholder="CVV*">
                 </div>
               </div>
             </div>
@@ -634,10 +616,7 @@
             <div class="row-form flex">
               <div class="form-input mb3 w-100 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <input type="text" name="card_phone" id="card_phone" value="" placeholder="Phone*" class="required_field">
-                </div>
-                <div class="error red small">
-                  <span>Please enter a valid phone <i class="fas fa-exclamation-circle"></i></span>
+                  <input type="text" name="card_phone" id="card_phone" value="" placeholder="Phone*">
                 </div>
               </div>
             </div>
@@ -647,10 +626,7 @@
             <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <input type="text" name="billing_street" id="billing_street" value="" placeholder="Street address*" class="required_field">
-                </div>
-                <div class="error red small">
-                  <span>Please enter a valid name <i class="fas fa-exclamation-circle"></i></span>
+                  <input type="text" name="billing_street" id="billing_street" value="" placeholder="Street address*">
                 </div>
               </div>
 
@@ -666,15 +642,12 @@
                 <div class="input-wrapper">
                   <input type="text" name="billing_city" id="billing_city" value="" placeholder="City">
                 </div>
-                <div class="error red small">
-                  <span>Please enter a valid name <i class="fas fa-exclamation-circle"></i></span>
-                </div>
               </div>
 
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <select id="billing_state" name="billing_state" class="required_field">
-                    <option value="" selected disabled>State</option>
+                  <select id="billing_state" name="billing_state">
+                    <option value="" selected disabled>State*</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AS">American Samoa</option>
@@ -739,19 +712,13 @@
                     <path d="M8 10l3.5-4h-7z" fill-rule="evenodd"></path>
                   </svg>
                 </div>
-                <div class="error red small">
-                  <span>Please select State <i class="fas fa-exclamation-circle"></i></span>
-                </div>
               </div>
             </div>
 
             <div class="row-form flex">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <input type="text" name="billing_zip" id="billing_zip" value="" placeholder="Zip*" class="required_field">
-                </div>
-                <div class="error red small">
-                  <span>Please enter a valid zip <i class="fas fa-exclamation-circle"></i></span>
+                  <input type="text" name="billing_zip" id="billing_zip" value="" placeholder="Zip">
                 </div>
               </div>
             </div>
@@ -772,10 +739,7 @@
             <div class="row-form">
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
-                  <input type="text" name="email_contact" id="email_contact" value="" placeholder="E-mail*" class="required_field email_field">
-                </div>
-                <div class="error red small">
-                  <span>Please enter a valid email <i class="fas fa-exclamation-circle"></i></span>
+                  <input type="text" name="email_contact" id="email_contact" value="" placeholder="E-mail*">
                 </div>
               </div>
             </div>
@@ -857,6 +821,7 @@
 </footer>
 	<script src="libs/jquery/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
