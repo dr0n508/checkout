@@ -54,15 +54,12 @@
 .bt {
   border-top: solid 1px #f1f1f2; }
 
-.m-minus {
+.row-form {
   margin-right: -10px;
   margin-left: -10px; }
 
 .bold {
   font-family: "BogleWeb-Bold", Helvetica Neue, Helvetica, Arial, sans-serif; }
-
-.h2 {
-  font-size: 24px; }
 
 .form-input .input-wrapper {
   position: relative;
@@ -103,6 +100,19 @@
 
 .form-input.input-number .icon-card {
   margin-left: 16px; }
+
+.primary-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background-color: #0071dc;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  outline: none; }
+  .primary-btn:hover {
+    background-color: #004f9a; }
 
 .main-header {
   position: relative;
@@ -220,24 +230,10 @@ a {
 h1, h2, h3, h4 {
   font-weight: inherit; }
 
-.animate, a {
+.animate, .form-input .input-wrapper, .primary-btn, a {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-
-.no_scroll {
-  overflow: hidden; }
-  .no_scroll:after {
-    content: '';
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6); }
-
-.hidden {
-  display: none !important; }
 
 .flex-auto {
   -webkit-box-flex: 1;
@@ -279,6 +275,16 @@ h1, h2, h3, h4 {
   margin: auto;
   padding-left: 24px;
   padding-right: 24px; }
+
+.main-section {
+  width: 70%;
+  margin-right: 24px; }
+
+.aside {
+  width: 30%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
 
 .error {
   padding: 4px 16px;
@@ -338,32 +344,12 @@ h1, h2, h3, h4 {
   padding: 24px;
   background-color: #f2f8fd; }
 
-.block {
+.checkout-block {
   -webkit-border-radius: .5rem;
           border-radius: .5rem;
   margin-bottom: 30px; }
-  .block .inner-wrapper {
+  .checkout-block .inner-wrapper {
     padding: 24px; }
-
-.main-block {
-  width: 70%;
-  margin-right: 24px; }
-
-.aside {
-  width: 30%; }
-
-.primary-btn {
-  padding: 12px 24px;
-  font-size: 16px;
-  color: white;
-  background-color: #0071dc;
-  -webkit-border-radius: 50px;
-          border-radius: 50px;
-  cursor: pointer;
-  border: none;
-  outline: none; }
-  .primary-btn:hover {
-    background-color: #004f9a; }
 
 .product-list {
   border-top: solid 1px #f1f1f2;
