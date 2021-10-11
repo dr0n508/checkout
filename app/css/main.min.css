@@ -104,11 +104,21 @@
   font-size: 12px;
   color: #de1c24; }
   .form-input .error:after {
-    content: "\f06a";
-    font-family: "Font Awesome 5 Pro";
-    margin-left: 5px; }
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 50%;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: url("../img/exclamation-circle-solid.svg") 50% 50% no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover; }
 
 .form-input.input-number .icon-card {
+  color: #74767c;
+  width: 18px;
   margin-left: 16px; }
 
 .primary-btn {
