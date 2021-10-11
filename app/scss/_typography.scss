@@ -10,6 +10,10 @@
   color: $red;
 }
 
+.bold {
+  font-family: $bold;
+}
+
 .f2 {
   font-size: 24px;
 }
@@ -70,6 +74,6 @@
   border-top: solid 1px $light-gray;
 }
 
-.bold {
-  font-family: $bold;
+.shadow {
+  box-shadow: 0 1px 2px 1px rgba(0,0,0,.15);
 }

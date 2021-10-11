@@ -1,9 +1,8 @@
 $(document).ready(function() {
 
-    //show aside when bottom of page
-    $(window).scroll(function() {
 
-        if($(document).height() - ($(window).scrollTop() + $(window).height()) < 250 ) {
+    $(window).scroll(function() {
+        if($(document).height() - $(window).scrollTop() < $(window).height()*1.5 ) {
             $('.aside').addClass('show');
         }
         else  {
@@ -17,13 +16,34 @@ $(document).ready(function() {
     });
 
     //validation form
+    $.validator.addMethod(
+        "regex",
+        function(value, element, regexp) {
+            var re = new RegExp(regexp);
+            return this.optional(element) || re.test(value);
+        },
+        "Please check your input."
+    );
+
     $(function(){
         $('#form_checkout').validate({
             rules: {
-                ship_first_name: 'required',
-                ship_last_name: 'required',
-                ship_address: 'required',
-                ship_city: 'required',
+                ship_first_name: {
+                    required: true,
+                    lettersonly: true
+                },
+                ship_last_name: {
+                    required: true,
+                    lettersonly: true
+                },
+                ship_address: {
+                    required: true,
+                    regex: "^[a-zA-Z0-9]+$"
+                },
+                ship_city: {
+                    required: true,
+                    regex: "^[a-zA-Z0-9]+$"
+                },
                 ship_state: {
                     required: true,
                 },
@@ -38,8 +58,14 @@ $(document).ready(function() {
                     email: true
                 },
 
-                card_first_name: 'required',
-                card_last_name: 'required',
+                card_first_name: {
+                    required: true,
+                    lettersonly: true
+                },
+                card_last_name: {
+                    required: true,
+                    lettersonly: true
+                },
                 card_number: {
                     required: true,
                     creditcard: true
@@ -53,10 +79,19 @@ $(document).ready(function() {
                      },
                 card_phone: 'required',
 
-                billing_street: 'required',
-                billing_state: 'required',
+                billing_street: {
+                    required: true,
+                    regex: "^[a-zA-Z0-9]+$"
+                },
+                billing_state: {
+                    required: true,
+                    regex: "^[a-zA-Z0-9]+$"
+                },
 
-                email_contact: 'required',
+                email_contact: {
+                    required: true,
+                    email: true
+                },
             },
             messages: {
                 ship_first_name: 'Please enter your First Name',
@@ -72,8 +107,8 @@ $(document).ready(function() {
                 card_first_name: 'Please enter your First Name',
                 card_last_name: 'Please enter your Last Name',
                 card_number: 'Please enter a valid Card Number',
-                cc_exp_month: 'Please enter month of exp month card',
-                cc_exp_year: 'Please enter year of exp month card',
+                cc_exp_month: 'Please enter month exp',
+                cc_exp_year: 'Please enter year exp',
                 cvv_number: 'Please enter CVV number',
                 card_phone: 'Please enter Phone',
 
