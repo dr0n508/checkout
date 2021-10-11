@@ -1,3 +1,16 @@
+//show aside when bottom of page
+
+$(window).scroll(function() {
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        $('.aside').addClass('show');
+    }
+    if($(window).scrollTop() + $(window).height() !== $(document).height()) {
+        $('.aside').removeClass('show');
+    }
+});
+
+
+
 // Mobile menu
 	$('.burger').click(function(){
 		$(this).toggleClass('active');
