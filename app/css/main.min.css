@@ -94,6 +94,14 @@
     -moz-appearance: none;
     appearance: none; }
 
+.form-input .error {
+  color: #de1c24;
+  position: relative; }
+  .form-input .error:after {
+    content: "\f06a";
+    font-family: "Font Awesome 5 Pro";
+    margin-left: 5px; }
+
 .form-input.input-number .icon-card {
   margin-left: 16px; }
 

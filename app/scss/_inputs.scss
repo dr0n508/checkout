@@ -28,6 +28,16 @@
       appearance: none;
     }
   }
+  .error {
+    color: $red;
+    position: relative;
+    &:after{
+      content: "\f06a";
+      font-family: "Font Awesome 5 Pro";
+      margin-left: 5px;
+
+    }
+  }
 }
 .form-input.input-number {
   .icon-card {
