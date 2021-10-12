@@ -11,13 +11,13 @@
 
           <div class="inner-wrapper">
 
-            <div class="custom-input-number">
+            <div class="custom-input-number mb3">
               <span class="minus">&#8722;</span>
               <input type="text" value="1"/>
               <span class="plus">+</span>
             </div>
 
-            <div class="coupon-input flex align-center">
+            <div class="coupon-input flex align-center mb3">
               <p class="f4 bold">Apply coupon code:</p>
 
               <div class="form-input w-25 pr-1 pl-1">
@@ -28,6 +28,32 @@
 
               <button class="secondary-btn">Apply</button>
             </div>
+
+            <p class="f4 bold mb3">Add a payment method</p>
+
+            <div class="radio-toolbar flex pb3">
+                <input type="radio" id="radioCard" name="radioPaymentMethod" value="creditCard" checked>
+                <label class="flex flex-column justify-between shadow" for="radioCard">
+                  <div class="card-list flex align-center flex-wrap">
+                    <img src="img/visa.png" alt="">
+                    <img src="img/mc.png" alt="">
+                    <img src="img/aex.png" alt="">
+                    <img src="img/discover.png" alt="">
+                  </div>
+                  <p class="f6 bold text-center">Credit/debit card</p>
+                </label>
+
+                <input type="radio" id="radioCrypto" name="radioPaymentMethod" value="crypto">
+                <label class="flex flex-column justify-between shadow"  for="radioCrypto">
+                  <div class="card-list flex align-center flex-wrap ">
+                    <img src="img/BTC-Bitcoin.png" alt="">
+                    <img src="img/ETC-Ethereum_Classic.png" alt="">
+                    <img src="img/LTC.png" alt="">
+                    <img src="img/BCH-Bitcoin_Cash.png" alt="">
+                  </div>
+                  <p class="f6 bold text-center">Crypto</p>
+                </label>
+              </div>
 
             <p class="gray f6 pb3">* Required fields</p>
 
@@ -141,7 +167,9 @@
               <div class="form-input mb3 w-50 pr-1 pl-1">
                 <div class="input-wrapper">
                   <select id="ship_country" name="ship_country">
-                    <option value="" selected disabled>Country*</option>
+                    <option value="US" selected>United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="CA" disabled>&#8722;&#8722;&#8722;&#8722;&#8722;&#8722;&#8722;&#8722;&#8722;</option>
                     <option value="AX">Aland</option>
                     <option value="AL">Albania</option>
                     <option value="DZ">Algeria</option>
@@ -179,7 +207,6 @@
                     <option value="BI">Burundi</option>
                     <option value="KH">Cambodia</option>
                     <option value="CM">Cameroon</option>
-                    <option value="CA">Canada</option>
                     <option value="CV">Cape Verde</option>
                     <option value="KY">Cayman Islands</option>
                     <option value="CF">Central African Republic</option>
@@ -359,7 +386,6 @@
                     <option value="UA">Ukraine</option>
                     <option value="AE">United Arab Emirates</option>
                     <option value="GB">United Kingdom</option>
-                    <option value="US">United States</option>
                     <option value="UM">United States Minor Outlying Islands</option>
                     <option value="VI">United States Virgin Islands</option>
                     <option value="UY">Uruguay</option>
@@ -388,7 +414,7 @@
 
             <div class="form-input mb3 w-100">
               <div class="input-wrapper">
-                <textarea type="text" name="comments" id="comments-field" placeholder="Comments" rows="5"></textarea>
+                <textarea type="text" name="comments" id="comments-field" placeholder="Comments" rows="2"></textarea>
               </div>
             </div>
 

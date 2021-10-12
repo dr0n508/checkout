@@ -95,6 +95,34 @@
   }
 }
 
-.coupon-input {
-
+.radio-toolbar {
+  input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+  input[type="radio"]:checked + label {
+    background-color: #f2f8fd;
+  }
+  label {
+    display: inline-block;
+    padding: 16px;
+    margin-right: 10px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    .card-list {
+      margin-bottom: 10px;
+    }
+    img {
+      width: 40px;
+      height: auto;
+      margin-right: 5px;
+    }
+    &:hover {
+      background-color: #f2f8fd;
+    }
+  }
 }
