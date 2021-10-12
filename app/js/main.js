@@ -65,7 +65,8 @@ $(document).ready(function() {
                 },
                 ship_zip: {
                     required: true,
-                    number: true
+                    regex: "^[A-Za-z0-9 _-]*$",
+                    minlength: 2,
                 },
                 ship_country: 'required',
                 ship_phone: 'required',
@@ -101,7 +102,6 @@ $(document).ready(function() {
                 },
                 billing_state: {
                     required: true,
-                    regex: "^[a-zA-Z0-9]+$"
                 },
 
                 email_contact: {
