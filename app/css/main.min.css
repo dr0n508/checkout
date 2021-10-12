@@ -462,7 +462,6 @@ h1, h2, h3, h4 {
     padding: 24px; }
 
 .product-list {
-  border-top: solid 1px #f1f1f2;
   padding-top: 30px; }
   .product-list li {
     margin-bottom: 16px; }
