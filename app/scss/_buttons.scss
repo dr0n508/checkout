@@ -12,3 +12,10 @@
     background-color: $accent;
   }
 }
+
+.secondary-btn {
+  @extend .primary-btn;
+  height: 56px;
+  background-color: $gray;
+  border-radius: 4px;
+}
