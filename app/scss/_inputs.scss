@@ -54,3 +54,44 @@
     margin-left: 16px;
   }
 }
+
+.custom-input-number {
+  display: flex;
+  padding: 4px;
+  width: 110px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  border: solid 1px #babbbe;
+  span {
+    cursor:pointer;
+  }
+  .minus, .plus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:24px;
+    height:24px;
+    font-size: 24px;
+    line-height: 1;
+    color: $mid-gray;
+    border-radius:50%;
+    &:hover {
+      color: white;
+      background-color: $gray;
+    }
+  }
+  input{
+    padding: 10px 5px;
+    color: $text;
+    font-family: $bold;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    text-align: center;
+    height:24px;
+    width: 45px;
+
+  }
+}

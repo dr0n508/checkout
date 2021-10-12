@@ -121,6 +121,61 @@
   width: 18px;
   margin-left: 16px; }
 
+.custom-input-number {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px;
+  width: 110px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  border: solid 1px #babbbe; }
+  .custom-input-number span {
+    cursor: pointer; }
+  .custom-input-number .minus, .custom-input-number .plus {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 1;
+    color: #46474a;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+    .custom-input-number .minus:hover, .custom-input-number .plus:hover {
+      color: white;
+      background-color: #74767c; }
+  .custom-input-number input {
+    padding: 10px 5px;
+    color: rgba(0, 0, 0, 0.9);
+    font-family: "BogleWeb-Bold", Helvetica Neue, Helvetica, Arial, sans-serif;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    text-align: center;
+    height: 24px;
+    width: 45px; }
+
 .primary-btn {
   padding: 12px 24px;
   font-size: 16px;
