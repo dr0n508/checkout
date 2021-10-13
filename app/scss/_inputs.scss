@@ -117,12 +117,14 @@
       margin-bottom: 10px;
     }
     img {
-      width: 40px;
+      width: 180px;
       height: auto;
-      margin-right: 5px;
     }
     &:hover {
       background-color: #f2f8fd;
     }
+  }
+  label:last-child {
+    margin-right: 0;
   }
 }

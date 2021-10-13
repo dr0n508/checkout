@@ -59,16 +59,25 @@
               <button class="secondary-btn">Apply</button>
             </div>
 
-            <p class="f4 bold mb3">Add a payment method</p>
+            <div class="payment-block mb3">
+              <p class="f4 bold mb3">Add a payment method</p>
 
-            <div class="radio-toolbar flex pb3">
+              <div class="flex align-center mb3">
+                <div class="money-icon">
+                  <img src="img/money.png" alt="">
+                </div>
+                <div>
+                  <p class="f5 bold">Put your benefits to use</p>
+                  <p class="f6">We'll recommend the best ways to pay for eligible items in your order.</p>
+                </div>
+              </div>
+
+              <div class="radio-toolbar flex pb3">
                 <input type="radio" id="radioCard" name="radioPaymentMethod" value="creditCard" checked>
+
                 <label class="flex flex-column justify-between shadow" for="radioCard">
                   <div class="card-list flex align-center flex-wrap">
-                    <img src="img/visa.png" alt="">
-                    <img src="img/mc.png" alt="">
-                    <img src="img/aex.png" alt="">
-                    <img src="img/discover.png" alt="">
+                    <img src="img/card-row.png" alt="">
                   </div>
                   <p class="f6 bold text-center">Credit/debit card</p>
                 </label>
@@ -76,14 +85,15 @@
                 <input type="radio" id="radioCrypto" name="radioPaymentMethod" value="crypto">
                 <label class="flex flex-column justify-between shadow"  for="radioCrypto">
                   <div class="card-list flex align-center flex-wrap ">
-                    <img src="img/BTC-Bitcoin.png" alt="">
-                    <img src="img/ETC-Ethereum_Classic.png" alt="">
-                    <img src="img/LTC.png" alt="">
-                    <img src="img/BCH-Bitcoin_Cash.png" alt="">
+                    <img src="img/crypto.png" alt="">
                   </div>
                   <p class="f6 bold text-center">Crypto</p>
                 </label>
               </div>
+            </div>
+
+
+
 
             <p class="gray f6 pb3">* Required fields</p>
 
@@ -669,6 +679,12 @@
                   <input type="text" name="card_phone" id="card_phone" value="" placeholder="Phone*">
                 </div>
               </div>
+            </div>
+
+            <div class="mb3">
+              <label class="flex align-center" for="billing_as_shipping">
+                <input id="billing_as_shipping" name="billing_as_shipping" type="checkbox" checked="">
+                <span class="f5 bold pl-1">Billing address as Shipping</span></label>
             </div>
 
             <p class="f3 bold mb3">Billing address</p>

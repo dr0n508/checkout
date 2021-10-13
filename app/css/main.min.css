@@ -197,11 +197,13 @@
   .radio-toolbar label .card-list {
     margin-bottom: 10px; }
   .radio-toolbar label img {
-    width: 40px;
-    height: auto;
-    margin-right: 5px; }
+    width: 180px;
+    height: auto; }
   .radio-toolbar label:hover {
     background-color: #f2f8fd; }
+
+.radio-toolbar label:last-child {
+  margin-right: 0; }
 
 .primary-btn, .secondary-btn {
   padding: 12px 24px;
@@ -473,11 +475,34 @@ h1, h2, h3, h4 {
         max-width: 100%;
         height: auto; }
 
+.payment-block .money-icon {
+  margin-right: 10px;
+  width: 48px;
+  height: 48px;
+  background-color: #0071dc;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .payment-block .money-icon img {
+    width: 65%;
+    height: auto; }
+
 @media only screen and (min-width: 993px) {
   .sticky-p {
     position: -webkit-sticky;
     position: sticky;
-    top: 50px; } }
+    top: 100px; } }
 
 @media only screen and (max-width: 992px) {
   .main-content {
