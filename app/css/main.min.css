@@ -605,8 +605,7 @@ h1, h2, h3, h4 {
 
 @media only screen and (max-width: 768px) {
   .main {
-    padding-top: 0;
-    padding-bottom: 250px; }
+    padding-top: 0; }
   .main-content {
     padding: 0; }
     .main-content .checkout-block {
@@ -660,7 +659,7 @@ h1, h2, h3, h4 {
             .main-content .aside .checkout-block .inner-wrapper .total-price p:last-child {
               padding-left: 10px; }
     .main-content .aside.show {
-      position: absolute; }
+      position: relative; }
       .main-content .aside.show .checkout-block .inner-wrapper .price-item {
         display: -webkit-box;
         display: -webkit-flex;

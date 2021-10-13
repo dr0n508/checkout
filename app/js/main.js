@@ -1,12 +1,18 @@
 $(document).ready(function() {
 
+
+    //show aside on mobile
+    let docHeight = $(document).height();
+
     $(window).scroll(function() {
-        if($(document).height() - $(window).scrollTop() < $(window).height()*1.5 ) {
+
+        if($(window).scrollTop() + 200 > (docHeight - $(window).height()) ) {
             $('.aside').addClass('show');
         }
-        else  {
+        else {
             $('.aside').removeClass('show');
         }
+
     });
 
     //show billing address

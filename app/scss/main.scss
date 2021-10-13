@@ -314,7 +314,6 @@ h1, h2, h3, h4 {
 @media only screen and (max-width: 768px) {
   .main {
     padding-top: 0;
-    padding-bottom: 250px;
   }
   .main-content {
     padding: 0;
@@ -365,7 +364,7 @@ h1, h2, h3, h4 {
       }
     }
     .aside.show {
-      position: absolute;
+      position: relative;
       .checkout-block .inner-wrapper .price-item {
         display: flex;
       }
