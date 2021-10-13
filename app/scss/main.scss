@@ -171,7 +171,6 @@ h1, h2, h3, h4 {
 }
 
 /////
-
 .main-section {
   width: 70%;
   margin-right: 24px;
@@ -230,13 +229,12 @@ h1, h2, h3, h4 {
       }
     }
     .delete-item {
-      width: 30px;
-      height: 30px;
+      width: 32px;
+      height: 32px;
       border: none;
       outline: none;
       background: none;
       font-size: 16px;
-      line-height: 2.5em;
       cursor: pointer;
       border-radius: 50%;
       display: flex;
@@ -273,8 +271,6 @@ h1, h2, h3, h4 {
 .billing-address-section {
   display: none;
 }
-
-
 
 @media only screen and (min-width: 993px) {
   .sticky-p {

@@ -489,13 +489,12 @@ h1, h2, h3, h4 {
         max-width: 100%;
         height: auto; }
     .product-list li .delete-item {
-      width: 30px;
-      height: 30px;
+      width: 32px;
+      height: 32px;
       border: none;
       outline: none;
       background: none;
       font-size: 16px;
-      line-height: 2.5em;
       cursor: pointer;
       -webkit-border-radius: 50%;
               border-radius: 50%;
