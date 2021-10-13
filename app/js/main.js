@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
 
-        if($(window).scrollTop() + 200 > (docHeight - $(window).height()) ) {
+        if($(window).scrollTop() + 100 > (docHeight - $(window).height()) ) {
             $('.aside').addClass('show');
         }
         else {
