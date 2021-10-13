@@ -14,6 +14,16 @@ $(document).ready(function() {
     $('#billing_as_shipping').change(function(){
         $('#billing_address_section').toggle();
     });
+    //promo-show
+    $( "#promo_show").on( "click", function() {
+        $('.promo-wrapper').toggleClass('show');
+        $( "#promo_show_btn" ).toggleClass('down');
+    });
+
+    //remove item from cart
+    $('.delete-item').click(function () {
+        $(this).closest('.list-item').remove();
+    });
 
     //custom imput number
     $('.minus').click(function () {

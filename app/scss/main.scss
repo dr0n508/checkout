@@ -268,6 +268,16 @@ h1, h2, h3, h4 {
   }
 }
 
+.promo-code-block {
+  cursor: pointer;
+  .promo-wrapper {
+    display: none;
+  }
+  .promo-wrapper.show {
+    display: flex;
+  }
+}
+
 .billing-address-section {
   display: none;
 }

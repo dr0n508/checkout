@@ -15,7 +15,30 @@
 
 .secondary-btn {
   @extend .primary-btn;
-  height: 56px;
-  background-color: $gray;
-  border-radius: 4px;
+  padding: 0 16px;
+  height: 40px;
+  color: $text;
+  background-color: white;
+  border: solid 2px $text;
+  border-radius: 50px;
+  &:hover {
+    color: white;
+    border-color: $accent;
+  }
+}
+
+.btn-icon {
+  border: none;
+  background: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  img {
+    width: 40%;
+  }
+}
+
+.btn-icon.down {
+  transform: rotate(180deg);
 }
