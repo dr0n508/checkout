@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
     $(window).scroll(function() {
         if($(document).height() - $(window).scrollTop() < $(window).height()*1.5 ) {
             $('.aside').addClass('show');
@@ -57,7 +56,7 @@ $(document).ready(function() {
     );
 
     $(function(){
-        $('#form_checkout').validate({
+        $('#form_checkout1').validate({
             rules: {
                 ship_first_name: {
                     required: true,
@@ -88,8 +87,42 @@ $(document).ready(function() {
                 ship_email: {
                     required: true,
                     email: true
-                },
+                }
+            },
+            messages: {
+                ship_first_name: 'Please enter your First Name',
+                ship_last_name: 'Please enter your Last Name',
+                ship_address: 'Please enter Address',
+                ship_city: 'Please enter City',
+                ship_state: 'Please select State',
+                ship_zip: 'Please enter ZIP',
+                ship_country: 'Please select Country',
+                ship_phone: 'Please enter Phone',
+                ship_email: 'Please enter a valid Email Address',
 
+            },
+            errorElement: 'span',
+            errorPlacement: function (error, element) {
+                error.addClass('invalid-feedback');
+
+                if (element.prop('type') === 'checkbox') {
+                    error.insertAfter( element.closest(".input-wrapper").next('label'));
+                } else {
+                    error.insertAfter(element.closest(".input-wrapper"));
+                }
+            },
+            highlight: function (element, errorClass, validClass) {
+                $(element).addClass('is-invalid').removeClass('is-valid');
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                $(element).addClass('is-valid').removeClass('is-invalid');
+            }
+        });
+    });
+
+    $(function(){
+        $('#form_checkout2').validate({
+            rules: {
                 card_first_name: {
                     required: true,
                     lettersonly: true
@@ -105,10 +138,10 @@ $(document).ready(function() {
                 cc_exp_month: 'required',
                 cc_exp_year: 'required',
                 cvv_number: {
-                        required: true,
-                        minlength: 3,
-                        number: true
-                     },
+                    required: true,
+                    minlength: 3,
+                    number: true
+                },
                 card_phone: 'required',
 
                 billing_street: {
@@ -125,16 +158,6 @@ $(document).ready(function() {
                 },
             },
             messages: {
-                ship_first_name: 'Please enter your First Name',
-                ship_last_name: 'Please enter your Last Name',
-                ship_address: 'Please enter Address',
-                ship_city: 'Please enter City',
-                ship_state: 'Please select State',
-                ship_zip: 'Please enter ZIP',
-                ship_country: 'Please select Country',
-                ship_phone: 'Please enter Phone',
-                ship_email: 'Please enter a valid Email Address',
-
                 card_first_name: 'Please enter your First Name',
                 card_last_name: 'Please enter your Last Name',
                 card_number: 'Please enter a valid Card Number',
