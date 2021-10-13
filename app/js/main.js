@@ -10,6 +10,11 @@ $(document).ready(function() {
         }
     });
 
+    //show billing address
+    $('#billing_as_shipping').change(function(){
+        $('#billing_address_section').toggle();
+    });
+
     //custom imput number
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
