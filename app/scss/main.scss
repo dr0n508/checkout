@@ -209,10 +209,12 @@ h1, h2, h3, h4 {
 }
 
 .product-list {
-  //border-top: solid 1px $light-gray;
   padding-top: 30px;
   li {
     margin-bottom: 16px;
+    .price-col {
+      line-height: 2.2em;
+    }
     .checkbox-wrapper {
       width: 30px;
     }
@@ -221,6 +223,27 @@ h1, h2, h3, h4 {
       .product-image {
         max-width: 100%;
         height: auto;
+      }
+    }
+    .delete-item {
+      width: 30px;
+      height: 30px;
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 16px;
+      line-height: 2.5em;
+      cursor: pointer;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 50%;
+        height: auto;
+      }
+      &:hover {
+        background-color: $light-gray;
       }
     }
   }
@@ -295,10 +318,11 @@ h1, h2, h3, h4 {
     .products-row {
       .product-list {
         .price-qty {
-          flex-direction: column;
+          flex-direction: column-reverse;
           text-align: right;
+          align-items: flex-end;
           div {
-            padding: 0;
+            //padding: 0;
           }
         }
         .f5 {

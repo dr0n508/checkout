@@ -58,7 +58,8 @@
 .custom-input-number {
   display: flex;
   padding: 4px;
-  width: 110px;
+  //width: 110px;
+  width: 90px;
   align-items: center;
   justify-content: space-between;
   border-radius: 50px;
@@ -88,10 +89,22 @@
     background: none;
     border: none;
     outline: none;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     height:24px;
-    width: 45px;
+    //width: 45px;
+    width: 30px;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-top: 10px;
+    .minus, .plus {
+      width:18px;
+      height:18px;
+    }
+    input {
+      font-size: 14px;
+      height: 20px;
+    }
   }
 }
 
