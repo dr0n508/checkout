@@ -253,14 +253,15 @@ h1, h2, h3, h4 {
 
 .payment-block {
   .money-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
     margin-right: 10px;
     width: 48px;
     height: 48px;
     background-color: $bg;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     img {
       width: 65%;
       height: auto;
@@ -331,9 +332,6 @@ h1, h2, h3, h4 {
           flex-direction: column-reverse;
           text-align: right;
           align-items: flex-end;
-          div {
-            //padding: 0;
-          }
         }
         .f5 {
           font-size: 12px;

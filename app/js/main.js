@@ -13,6 +13,7 @@ $(document).ready(function() {
     $('#billing_as_shipping').change(function(){
         $('#billing_address_section').toggle();
     });
+
     //promo-show
     $( "#promo_show").on( "click", function() {
         $('.promo-wrapper').toggleClass('show');
@@ -41,7 +42,11 @@ $(document).ready(function() {
     });
 
     //stop submit form
-    $("#form_checkout").submit(function (e) {
+    $("#form_checkout1").submit(function (e) {
+        e.preventDefault();
+    });
+
+    $("#form_checkout2").submit(function (e) {
         e.preventDefault();
     });
 

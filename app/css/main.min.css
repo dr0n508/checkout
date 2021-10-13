@@ -538,16 +538,13 @@ h1, h2, h3, h4 {
         background-color: #f1f1f2; }
 
 .payment-block .money-icon {
-  margin-right: 10px;
-  width: 48px;
-  height: 48px;
-  background-color: #0071dc;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -555,7 +552,13 @@ h1, h2, h3, h4 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-right: 10px;
+  width: 48px;
+  height: 48px;
+  background-color: #0071dc;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
   .payment-block .money-icon img {
     width: 65%;
     height: auto; }
