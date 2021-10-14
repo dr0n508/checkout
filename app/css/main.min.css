@@ -650,8 +650,11 @@ h1, h2, h3, h4 {
           padding-bottom: 0; }
           .main-content .aside .checkout-block .inner-wrapper .price-item {
             display: none; }
+          .main-content .aside .checkout-block .inner-wrapper .promo-code-block {
+            display: none; }
           .main-content .aside .checkout-block .inner-wrapper .total-price {
             padding-bottom: 16px;
+            margin-bottom: 0;
             -webkit-box-pack: end;
             -webkit-justify-content: flex-end;
                 -ms-flex-pack: end;
@@ -664,6 +667,8 @@ h1, h2, h3, h4 {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex; } }
+        display: flex; }
+      .main-content .aside.show .checkout-block .inner-wrapper .promo-code-block {
+        display: block; } }
 
 /*# sourceMappingURL=css/main.min.css.map */

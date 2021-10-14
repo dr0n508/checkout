@@ -353,8 +353,12 @@ h1, h2, h3, h4 {
           .price-item {
             display: none;
           }
+          .promo-code-block {
+            display: none;
+          }
           .total-price {
             padding-bottom: 16px;
+            margin-bottom: 0;
             justify-content: flex-end;
             p:last-child {
               padding-left: 10px;
@@ -367,6 +371,9 @@ h1, h2, h3, h4 {
       position: relative;
       .checkout-block .inner-wrapper .price-item {
         display: flex;
+      }
+      .checkout-block .inner-wrapper .promo-code-block {
+        display: block;
       }
     }
   }

@@ -534,38 +534,54 @@
       </section>
 
       <aside class="aside">
+        <div class="checkout-block shadow sticky-p">
+          <div class="inner-wrapper">
 
-      <div class="checkout-block shadow sticky-p">
-        <div class="inner-wrapper">
+            <button class="primary-btn w-100 bold mb3" type="submit">Continue</button>
 
-          <button class="primary-btn w-100 bold mb3" type="submit">Continue</button>
+            <div class="flex flex-column center">
 
-          <div class="flex flex-column center">
+              <div class="price-item flex flex-row justify-between items-center f5 pt3">
+                <p><span class="bold">Subtotal&nbsp;</span><span>(1 item)</span></p>
+                <p class="mid-gray f5">$19.97</p>
+              </div>
 
-            <div class="price-item flex flex-row justify-between items-center f5 pt3">
-              <p><span class="bold">Subtotal&nbsp;</span><span>(1 item)</span></p>
-              <p class="mid-gray f5">$19.97</p>
+              <div class="price-item flex flex-row justify-between items-center f6 mid-gray">
+                <p>Below order minimum (less than $35)</p>
+                <div>$5.99</div>
+              </div>
+
+              <div class="price-item flex flex-row justify-between items-center pb3">
+                <p class="bold f5">Estimated taxes</p>
+                <p class="f5 bold">$2.17</p>
+              </div>
+
+              <div class="total-price flex flex-row justify-between items-center dark-gray pt3 mb3 f3 bt">
+                <p class="bold">Estimated total</p>
+                <p class="bold">$28.13</p>
+              </div>
+
+              <div class="promo-code-block bt pt3">
+
+                <div class="flex justify-between align-center mb3" id="promo_show">
+                  <p>Have a promo code?</p>
+                  <button class="btn-icon down" id="promo_show_btn"><img src="img/chevron-up-solid.svg" alt=""></button>
+                </div>
+
+                <div class="promo-wrapper flex align-center mb3">
+                  <div class="form-input w-100 pr-1">
+                    <div class="input-wrapper">
+                      <input type="text" name="promo_code" id="promo_code" placeholder="Promo code" value="">
+                    </div>
+                  </div>
+                  <button class="secondary-btn bold">Apply</button>
+                </div>
+              </div>
+
             </div>
-
-            <div class="price-item flex flex-row justify-between items-center f6 mid-gray">
-              <p>Below order minimum (less than $35)</p>
-              <div>$5.99</div>
-            </div>
-
-            <div class="price-item flex flex-row justify-between items-center pb3">
-              <p class="bold f5">Estimated taxes</p>
-              <p class="f5 bold">$2.17</p>
-            </div>
-
-            <div class="total-price flex flex-row justify-between items-center dark-gray pt3 f3 bt">
-              <p class="bold">Estimated total</p>
-              <p class="bold">$28.13</p>
-            </div>
-
           </div>
         </div>
-      </div>
-    </aside>
+      </aside>
     </div>
   </form>
 </main>
